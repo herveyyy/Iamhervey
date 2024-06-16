@@ -22,11 +22,11 @@ const Usernav = () => {
   return (
     <>
       <div
-        className={`${
+        className={`h-0 ${
           showMenu
-            ? "h-10 flex-col flex absolute top-0 z-10 overflow-hidden border-b border-gray-800 duration-700 w-full backdrop-blur-md bg-black/70 md:h-10"
-            : "h-[200px] flex-col flex absolute top-0 z-10 overflow-hidden border-b border-gray-800 duration-700 w-full backdrop-blur-md bg-black/70  md:h-10"
-        } h-0`}
+            ? "h-[200px] flex-col flex absolute top-0 z-10 overflow-hidden border-b border-gray-800 duration-700 w-full backdrop-blur-md bg-black/70  md:h-10"
+            : "h-10 flex-col flex absolute top-0 z-10 overflow-hidden border-b border-gray-800 duration-700 w-full backdrop-blur-md bg-black/70 md:h-10"
+        } `}
       >
         {/* WideScreen */}
         <div className=" w-full backdrop-blur-md bg-black/70  h-10 border-b border-gray-800   flex justify-between duration-700">
