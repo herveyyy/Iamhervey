@@ -92,7 +92,7 @@ const Usernav = () => {
             </div>
             <div
               onClick={openMenu}
-              className="w-12 flex items-center justify-center border-r border-gray-800 h-full hover:bg-white hover:text-black duration-500 cursor-pointer"
+              className="w-12 flex items-center justify-center border-gray-800 h-full hover:bg-white hover:text-black duration-500 cursor-pointer"
             >
               <HiOutlineMenu />
             </div>
