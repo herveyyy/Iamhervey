@@ -1,6 +1,4 @@
 "use client";
-
-import Image from "next/image";
 import Usernavbar from "@/components/Usernav";
 import Introduction from "@/Screens/Introduction";
 import Projects from "@/Screens/Projects";
@@ -14,10 +12,12 @@ export default function Home() {
       <Usernavbar />
 
       {/* Screens */}
-      <Introduction />
-      <Projects />
-      <Certificates />
-      <Contact />
+      <div className="h-screen overflow-auto !scroll-smooth">
+        <Introduction />
+        <Projects />
+        <Certificates />
+        <Contact />
+      </div>
     </main>
   );
 }
