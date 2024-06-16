@@ -1,9 +1,12 @@
-import Image from "next/image";
+"use client";
 
+import Image from "next/image";
+import Usernavbar from "@/components/Usernav";
 export default function Home() {
   return (
     <main className="">
-      <p>hehe</p>
+      {/* Navbar */}
+      <Usernavbar />
     </main>
   );
 }
