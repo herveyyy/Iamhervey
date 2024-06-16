@@ -108,7 +108,7 @@ const Usernav = () => {
           <a
             onClick={openMenu}
             href="#Introduction"
-            className="border-r border-gray-800 flex gap-x-2 items-center px-4 w-full h-10 border-b hover:bg-gray-100 hover:text-black duration-500"
+            className=" border-gray-800 flex gap-x-2 items-center px-4 w-full h-10 border-b hover:bg-gray-100 hover:text-black duration-500"
           >
             <HiOutlineUserCircle className="!h-5 !w-5" />
             <Typography className=" !font-light flex items-center ">
@@ -118,7 +118,7 @@ const Usernav = () => {
           <a
             onClick={openMenu}
             href="#Projects"
-            className="border-r border-gray-800 flex gap-x-2 items-center px-4 w-full h-10 border-b hover:bg-gray-100 hover:text-black duration-500"
+            className=" border-gray-800 flex gap-x-2 items-center px-4 w-full h-10 border-b hover:bg-gray-100 hover:text-black duration-500"
           >
             <HiCode className="!h-5 !w-5" />
             <Typography className=" !font-light flex items-center ">
@@ -128,7 +128,7 @@ const Usernav = () => {
           <a
             onClick={openMenu}
             href="#Certificates"
-            className="border-r border-gray-800 flex gap-x-2 items-center px-4 w-full h-10 border-b hover:bg-gray-100 hover:text-black duration-500"
+            className=" border-gray-800 flex gap-x-2 items-center px-4 w-full h-10 border-b hover:bg-gray-100 hover:text-black duration-500"
           >
             <HiOutlineAcademicCap className="!h-5 !w-5" />
             <Typography className=" !font-light flex items-center ">
@@ -138,7 +138,7 @@ const Usernav = () => {
           <a
             onClick={openMenu}
             href="#Contact"
-            className="border-r border-gray-800 flex gap-x-2 items-center px-4 w-full h-10 border-b hover:bg-gray-100 hover:text-black duration-500"
+            className=" border-gray-800 flex gap-x-2 items-center px-4 w-full h-10 border-b hover:bg-gray-100 hover:text-black duration-500"
           >
             <HiOutlineMail className="!h-5 !w-5" />
             <Typography className=" !font-light flex items-center ">
