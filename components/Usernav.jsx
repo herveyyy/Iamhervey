@@ -38,7 +38,7 @@ const Usernav = () => {
             >
               <HiOutlineQrcode className="!h-7 !w-7" />
               <Typography variant="h6" className="text-center">
-                My Portfolio
+                Hi, I&apos;m Hervey
               </Typography>
             </a>
           </div>
