@@ -27,7 +27,7 @@ export const Introduction = () => {
             {/* Content 2 */}
             <div className=" md:pr-10 lg:pr-0 pr-0 w-full md:w-1/2 items-center flex flex-col gap-y-10">
               {/* Profile Card */}
-              <div className=" md:w-auto md:h-auto w-64 h-64">
+              <div className=" md:w-auto md:h-auto w-64 h-64 ">
                 <ProfilePicture />
               </div>
               <div className="md:block hidden ">

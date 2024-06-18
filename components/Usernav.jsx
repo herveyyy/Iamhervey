@@ -12,16 +12,15 @@ import {
   HiOutlineMail,
 } from "react-icons/hi";
 
-const Usernav = () => {
-  const [showMenu, setShowMenu] = useState(false);
+const Usernav = ({ menu, setMenu }) => {
   const openMenu = () => {
-    setShowMenu(!showMenu);
+    setMenu(!menu);
   };
   return (
     <>
       <div
         className={`h-0 ${
-          showMenu
+          menu
             ? "h-[200px] flex-col flex absolute top-0 z-10 overflow-hidden border-b border-gray-800 duration-700 w-full backdrop-blur-md bg-black/70  md:h-10"
             : "h-10 flex-col flex absolute top-0 z-10 overflow-hidden border-b border-gray-800 duration-700 w-full backdrop-blur-md bg-black/70 md:h-10"
         } `}
