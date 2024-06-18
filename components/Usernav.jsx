@@ -2,10 +2,8 @@
 
 import { Typography } from "@material-tailwind/react";
 import React, { useState } from "react";
-import Image from "next/image";
 import {
   HiDownload,
-  HiOutlineFingerPrint,
   HiOutlineMenu,
   HiOutlineUserCircle,
   HiOutlineQrcode,
@@ -50,7 +48,10 @@ const Usernav = () => {
               >
                 <HiOutlineUserCircle className="!h-5 !w-5" />
 
-                <Typography className=" !font-light flex items-center justify-center">
+                <Typography
+                  variant="small"
+                  className=" !font-light flex items-center justify-center"
+                >
                   Introduction
                 </Typography>
               </a>
@@ -60,7 +61,10 @@ const Usernav = () => {
               >
                 <HiCode className="!h-5 !w-5" />
 
-                <Typography className=" !font-light flex items-center justify-center">
+                <Typography
+                  variant="small"
+                  className=" !font-light flex items-center justify-center"
+                >
                   Projects
                 </Typography>
               </a>
@@ -70,7 +74,10 @@ const Usernav = () => {
               >
                 <HiOutlineAcademicCap className="!h-5 !w-5" />
 
-                <Typography className=" !font-light flex items-center justify-center">
+                <Typography
+                  variant="small"
+                  className=" !font-light flex items-center justify-center"
+                >
                   Certificates
                 </Typography>
               </a>
@@ -80,7 +87,10 @@ const Usernav = () => {
               >
                 <HiOutlineMail className="!h-5 !w-5" />
 
-                <Typography className=" !font-light flex items-center justify-center">
+                <Typography
+                  variant="small"
+                  className=" !font-light flex items-center justify-center"
+                >
                   Contact Me
                 </Typography>
               </a>
@@ -97,7 +107,7 @@ const Usernav = () => {
               <HiOutlineMenu />
             </div>
           </div>
-          <div className=" text-center w-40 lg:border-l border-l-0 hidden gap-x-2 px-2  md:flex items-center justify-center cursor-pointer border-gray-800 h-full">
+          <div className=" text-sm text-center w-40 lg:border-l border-l-0 hidden gap-x-2 px-2  md:flex items-center justify-center cursor-pointer border-gray-800 h-full">
             <HiDownload />
             Download CV
           </div>
@@ -111,7 +121,10 @@ const Usernav = () => {
             className=" border-gray-800 flex gap-x-2 items-center px-4 w-full h-10 border-b hover:bg-gray-100 hover:text-black duration-500"
           >
             <HiOutlineUserCircle className="!h-5 !w-5" />
-            <Typography className=" !font-light flex items-center ">
+            <Typography
+              variant="small"
+              className=" !font-light flex items-center "
+            >
               Introduction
             </Typography>
           </a>
@@ -121,7 +134,10 @@ const Usernav = () => {
             className=" border-gray-800 flex gap-x-2 items-center px-4 w-full h-10 border-b hover:bg-gray-100 hover:text-black duration-500"
           >
             <HiCode className="!h-5 !w-5" />
-            <Typography className=" !font-light flex items-center ">
+            <Typography
+              variant="small"
+              className=" !font-light flex items-center "
+            >
               Projects
             </Typography>
           </a>
@@ -131,7 +147,10 @@ const Usernav = () => {
             className=" border-gray-800 flex gap-x-2 items-center px-4 w-full h-10 border-b hover:bg-gray-100 hover:text-black duration-500"
           >
             <HiOutlineAcademicCap className="!h-5 !w-5" />
-            <Typography className=" !font-light flex items-center ">
+            <Typography
+              variant="small"
+              className=" !font-light flex items-center "
+            >
               Certificates
             </Typography>
           </a>
@@ -141,7 +160,10 @@ const Usernav = () => {
             className=" border-gray-800 flex gap-x-2 items-center px-4 w-full h-10 border-b hover:bg-gray-100 hover:text-black duration-500"
           >
             <HiOutlineMail className="!h-5 !w-5" />
-            <Typography className=" !font-light flex items-center ">
+            <Typography
+              variant="small"
+              className=" !font-light flex items-center "
+            >
               Contact Me
             </Typography>
           </a>
