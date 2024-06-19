@@ -39,8 +39,8 @@ export const Introduction = () => {
             {/* Content 2 */}
             <div className=" md:pr-10 lg:pr-0 pr-0 w-full   md:w-1/2   items-center flex flex-col gap-y-10">
               {/* Profile Card */}
-              <div className=" laptop:w-[30rem] laptop:h-[30rem] max-desktop:w-auto max-desktop:h-auto  w-64 h-64 md:w-80 md:h-80    duration-1000 ">
-                <ProfilePicture />
+              <div className="  laptop:w-[30rem] laptop:h-[30rem] max-desktop:w-auto max-desktop:h-auto  w-64 h-64 md:w-80 md:h-80 duration-1000 ">
+                <ProfilePicture pictureURL={"/images/hervey.png"} />
               </div>
               <div className="md:block hidden ">
                 <Socials />
