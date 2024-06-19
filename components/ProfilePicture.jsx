@@ -8,8 +8,8 @@ const ProfilePicture = () => {
         {/* Image component */}
         <Image
           src={"/images/hervey.png"}
-          width={400}
-          height={400}
+          width={600}
+          height={600}
           alt="me"
           className=""
         />
