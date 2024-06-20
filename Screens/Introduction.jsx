@@ -31,14 +31,14 @@ export const Introduction = () => {
               <div className="laptop:hidden absolute bottom-0   w-full  sm:p-4 sm:pb-8 tablet:px-32 ">
                 <Socials />
               </div>
-              <div className=" md:mt-0 md:h-auto h-full md:flex-none  flex  pb-32 ">
+              <div className=" md:mt-0 md:h-auto h-full md:flex-none  flex  pb-28 ">
                 <Stacks />
               </div>
             </div>
             {/* Content 2 */}
             <div className=" md:pr-10 lg:pr-0 pr-0 w-full  h-auto md:h-full  md:w-1/2   items-center flex flex-col gap-y-10">
               {/* Profile Card */}
-              <div className=" laptop:-translate-y-5  laptop:w-[30rem] laptop:h-[30rem] max-desktop:w-auto max-desktop:h-auto  w-64 h-64 md:w-80 md:h-80 duration-1000 ">
+              <div className=" laptop:-translate-y-5  laptop:w-[25rem] laptop:h-[25rem] desktop:w-[30rem] desktop:h-[30rem] max-desktop:w-auto max-desktop:h-auto  w-64 h-64 md:w-80 md:h-80 duration-1000 ">
                 <ProfilePicture pictureURL={"/images/hervey.png"} />
               </div>
               <div className="laptop:block hidden ">
