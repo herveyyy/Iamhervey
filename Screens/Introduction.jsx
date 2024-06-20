@@ -14,7 +14,7 @@ export const Introduction = () => {
           {/* Contents */}
           <div className="flex md:flex-row flex-col-reverse   gap-y-8 items-center h-full   ">
             {/* Content 1 */}
-            <div className="lg:w-[70%] md:w-1/2 w-full h-full  max-desktop:py-20  ">
+            <div className="lg:w-[70%] md:w-1/2 w-full h-full  max-desktop:py-20 md:py-20   desktop:py-0 duration-700">
               <div className="md:mt-20 mt-0 ">
                 <div className=" bg-white hover:bg-transparent hover:text-white duration-500 cursor-default text-black h-full translate-x-0  md:-translate-y-16 ">
                   <p className="font-mono text-2xl sm:text-2xl md:text-7xl desktop:text-9xl  text-center ">
@@ -28,7 +28,7 @@ export const Introduction = () => {
                 </div>
               </div>
 
-              <div className="md:hidden absolute bottom-0   w-full p-4  pb-8 ">
+              <div className="laptop:hidden absolute bottom-0   w-full  sm:p-4 sm:pb-8 tablet:px-32 ">
                 <Socials />
               </div>
               <div className=" md:mt-0 md:h-auto h-full md:flex-none  flex  pb-32 ">
@@ -41,7 +41,7 @@ export const Introduction = () => {
               <div className=" laptop:-translate-y-5  laptop:w-[30rem] laptop:h-[30rem] max-desktop:w-auto max-desktop:h-auto  w-64 h-64 md:w-80 md:h-80 duration-1000 ">
                 <ProfilePicture pictureURL={"/images/hervey.png"} />
               </div>
-              <div className="md:block hidden ">
+              <div className="laptop:block hidden ">
                 <Socials />
               </div>
             </div>
