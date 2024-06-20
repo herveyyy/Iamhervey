@@ -3,9 +3,14 @@ import { FaReact } from "react-icons/fa6";
 
 const Stacks = () => {
   return (
-    <div className="w-full flex flex-col justify-center items-center p-2 ">
-      <p className="font-mono text-lg">Development Stack</p>
-      <div id="Stacks" className="flex justify-around gap-3 duration-1000">
+    <div className="w-full  flex flex-col justify-center items-center p-2 ">
+      <p className="font-mono text-lg text-center md:text-start">
+        Development Stack
+      </p>
+      <div
+        id="Stacks"
+        className="flex  flex-wrap justify-around gap-x-3 duration-1000"
+      >
         <div className=" gap-1 flex items-center justify-center h-16 w-16 lg:w-20 lg:h-20 duration-1000">
           <div className="text-blue-400 text-3xl ">
             <FaReact />
