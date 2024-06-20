@@ -48,6 +48,8 @@ const Socials = () => {
           <FaGoogle className="w-6 h-6" />
         </a>
         <a
+          href="https://www.upwork.com/freelancers/~015549e784b9e6dece?mp_source=share"
+          target="_blank"
           className=" hover:bg-green-800  w-14 p-2 rounded-md  flex justify-center items-center
          shadow-lg shadow-blue-gray-0 duration-500
           hover:-translate-y-1 hover:ring-gray-200 focus:backdrop-blur-sm hover:shadow-green-600
