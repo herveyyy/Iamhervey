@@ -28,7 +28,7 @@ export const Introduction = () => {
                 </div>
               </div>
 
-              <div className="laptop:hidden absolute bottom-0   w-full  sm:p-4 sm:pb-8 tablet:px-32 ">
+              <div className="laptop:hidden absolute bottom-0 z-50  w-full  sm:p-4 sm:pb-8 tablet:px-32 ">
                 <Socials />
               </div>
               <div className=" md:mt-0 md:h-auto h-full md:flex-none  flex  pb-28 ">

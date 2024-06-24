@@ -1,3 +1,4 @@
+import ProjectCard from "@/components/ProjectsComponents/ProjectCard";
 import React from "react";
 
 const Projects = () => {
@@ -11,8 +12,12 @@ const Projects = () => {
             </p>
           </div>
         </div>
-        <div className="h-full flex flex-col  tablet:flex-row">
-          <div>1</div>
+        <div className="h-full flex justify-center items-start mt-10  overflow-hidden ">
+          {/* Project List */}
+          <div className="  flex flex-col gap-6  laptop:flex-row justify-center laptop:justify-start px-2 ">
+            {/* Projectcard */}
+            <ProjectCard />
+          </div>
         </div>
       </div>
     </div>
