@@ -19,6 +19,7 @@ export default function Home() {
   return (
     <main className="">
       {/* Navbar */}
+
       <div
         className={`sticky md:block z-10 ${
           scroll
