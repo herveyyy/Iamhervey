@@ -8,18 +8,16 @@ import {
   FaArrowCircleRight,
 } from "react-icons/fa";
 
-const ProjectList = ({ projects, itemsPerPage = 3 }) => {
+const ProjectList = ({ projects, itemsPerPage = 1 }) => {
   const [responsiveItemsPerPage, setResponsiveItemsPerPage] =
     useState(itemsPerPage);
 
   useEffect(() => {
     const handleResize = () => {
-      setResponsiveItemsPerPage(window.innerWidth < 1024 ? 1 : itemsPerPage);
+      setResponsiveItemsPerPage(window.innerWidth > 1024 ? 3 : itemsPerPage);
     };
     window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize); // Cleanup function
-  }, [itemsPerPage]); // Run only when itemsPerPage changes
+  }, [itemsPerPage]);
   const [currentPage, setCurrentPage] = useState(1);
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
