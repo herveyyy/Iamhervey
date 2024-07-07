@@ -7,8 +7,10 @@ import {
   FaArrowAltCircleRight,
   FaArrowCircleRight,
 } from "react-icons/fa";
+import Modal from "../Modal";
  
 const ProjectList = ({ projects, itemsPerPage = 1 }) => {
+  const [open,setOpen] = useState(false)
   const resizeResult = () => {
     let screenSize;
     return  screenSize =  (window.innerWidth > 1024 ? 3 : itemsPerPage);
@@ -47,9 +49,11 @@ const ProjectList = ({ projects, itemsPerPage = 1 }) => {
   );
 
   return (
-    <div className="  ">
+    <div className=" ">
+      <Modal isClose={() => setOpen(!open)} isOpen={open}/>
       <div className="  flex flex-col gap-6  laptop:flex-row justify-center laptop:justify-start px-2 ">
         {paginatedProjects.map((project) => (
+          <button onClick={() => setOpen(!open)}>
           <ProjectCard
             key={project.title}
             title={project.title}
@@ -57,7 +61,9 @@ const ProjectList = ({ projects, itemsPerPage = 1 }) => {
             coverImage={project.coverImage}
             gitLink={project.gitLink}
             deploymentLink={project.deploymentLink}
+
           />
+          </button>
         ))}
       </div>
 
