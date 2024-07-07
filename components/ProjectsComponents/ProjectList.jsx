@@ -8,23 +8,22 @@ import {
   FaArrowCircleRight,
 } from "react-icons/fa";
 import Modal from "../Modal";
- 
+
 const ProjectList = ({ projects, itemsPerPage = 1 }) => {
-  const [open,setOpen] = useState(false)
-  const [selectedProject,setSelectedProject] = useState({});
+  const [open, setOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState({});
   const resizeResult = () => {
     let screenSize;
-    return  screenSize =  (window.innerWidth > 1024 ? 3 : itemsPerPage);
-  }
+    return (screenSize = window.innerWidth > 1024 ? 3 : itemsPerPage);
+  };
 
-  const [responsiveItemsPerPage, setResponsiveItemsPerPage] = useState(resizeResult);
-  
+  const [responsiveItemsPerPage, setResponsiveItemsPerPage] =
+    useState(resizeResult);
 
   useEffect(() => {
     const handleResize = () => {
       setResponsiveItemsPerPage(window.innerWidth > 1024 ? 3 : itemsPerPage);
-      console.log(window.innerWidth)
-      
+      console.log(window.innerWidth);
     };
     window.addEventListener("resize", handleResize);
   }, []);
@@ -51,21 +50,27 @@ const ProjectList = ({ projects, itemsPerPage = 1 }) => {
 
   return (
     <div className=" ">
-      <Modal isClose={() => setOpen(!open)} isOpen={open} data={selectedProject}/>
+      <Modal
+        isClose={() => setOpen(!open)}
+        isOpen={open}
+        data={selectedProject}
+      />
       <div className="  flex flex-col gap-6  laptop:flex-row justify-center laptop:justify-start px-2 ">
         {paginatedProjects.map((project) => (
-          <button onClick={() => {setOpen(!open)
-            setSelectedProject(project)}
-          } >
-          <ProjectCard
-            key={project.title}
-            title={project.title}
-            status={project.status}
-            coverImage={project.coverImage}
-            gitLink={project.gitLink}
-            deploymentLink={project.deploymentLink}
-
-          />
+          <button
+            onClick={() => {
+              setOpen(!open);
+              setSelectedProject(project);
+            }}
+          >
+            <ProjectCard
+              key={project.title}
+              title={project.title}
+              status={project.status}
+              coverImage={project.coverImage}
+              gitLink={project.gitLink}
+              deploymentLink={project.deploymentLink}
+            />
           </button>
         ))}
       </div>
