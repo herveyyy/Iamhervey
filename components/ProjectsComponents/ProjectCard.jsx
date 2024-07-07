@@ -8,6 +8,15 @@ const ProjectCard = ({
   gitLink,
   deploymentLink,
 }) => {
+
+
+  const linkChecker = (dpLink) => {
+if(dpLink){
+  return <div className="animate-pulse w-2 h-2 bg-green-600"/>;
+}
+return <div className="animate-pulse w-2 h-2 bg-red-600"/>;
+
+  }
   return (
     <div
       onClick={() => {
@@ -34,16 +43,18 @@ const ProjectCard = ({
       <div className="flex w-full  bg-white rounded-b-3xl justify-between items-end p-1 gap-x-2">
         <div className="w-full px-2 flex items-center h-full ">
           <div className="text-black font-mono text-[8px] md:text-[10px] flex gap-1 items-baseline">
-            Status: <div className="animate-pulse w-2 h-2 bg-green-600"></div>
-            Deployed
+            Status: {linkChecker(deploymentLink)}
+            {status}
           </div>
         </div>
         <div className="flex w-full justify-start gap-1  py-1">
           <button
-            className="border border-gray-900 hover:bg-black  text-black hover:text-white w-10 p-2 rounded-md  flex justify-center items-center
+          disabled ={deploymentLink ? false : true}
+            className={`border border-gray-900 hover:bg-black  text-black hover:text-white w-10 p-2 rounded-md  flex justify-center items-center
          shadow-lg shadow-red-0 duration-500
           hover:-translate-y-1 hover:ring-red-200 focus:backdrop-blur-sm 
-          "
+          cursor-not-allowed ${deploymentLink ? "cursor-pointer" : " cursor-not-allowed"}`}
+          
           >
             <FaLink className="w-5 h-5" />
           </button>

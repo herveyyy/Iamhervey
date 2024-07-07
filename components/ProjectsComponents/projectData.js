@@ -18,7 +18,7 @@ const projects = [
     status: "Completed",
     coverImage: "/images/project3.jpg", // Replace with your image path
     gitLink: "https://github.com/your-username/project3",
-    deploymentLink: "https://your-domain.com/project3",
+    // deploymentLink: "https://your-domain.com/project3",
   },
   {
     title: "Project 4",

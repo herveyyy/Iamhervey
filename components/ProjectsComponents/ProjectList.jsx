@@ -11,6 +11,7 @@ import Modal from "../Modal";
  
 const ProjectList = ({ projects, itemsPerPage = 1 }) => {
   const [open,setOpen] = useState(false)
+  const [selectedProject,setSelectedProject] = useState({});
   const resizeResult = () => {
     let screenSize;
     return  screenSize =  (window.innerWidth > 1024 ? 3 : itemsPerPage);
@@ -50,10 +51,12 @@ const ProjectList = ({ projects, itemsPerPage = 1 }) => {
 
   return (
     <div className=" ">
-      <Modal isClose={() => setOpen(!open)} isOpen={open}/>
+      <Modal isClose={() => setOpen(!open)} isOpen={open} data={selectedProject}/>
       <div className="  flex flex-col gap-6  laptop:flex-row justify-center laptop:justify-start px-2 ">
         {paginatedProjects.map((project) => (
-          <button onClick={() => setOpen(!open)}>
+          <button onClick={() => {setOpen(!open)
+            setSelectedProject(project)}
+          } >
           <ProjectCard
             key={project.title}
             title={project.title}
