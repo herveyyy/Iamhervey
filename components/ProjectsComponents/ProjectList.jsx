@@ -55,6 +55,7 @@ const ProjectList = ({ projects, itemsPerPage = 1 }) => {
       <div className="  flex flex-col gap-6  laptop:flex-row justify-center laptop:justify-start px-2 ">
         {paginatedProjects.map((project) => (
           <button
+            key={project.title}
             onClick={() => {
               setOpen(!open);
               setSelectedProject(project);
