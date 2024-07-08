@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useLayoutEffect } from "react";
 import ProjectCard from "./ProjectCard";
 import {
   FaArrowAltCircleLeft,
@@ -12,21 +12,18 @@ import Modal from "../Modal";
 const ProjectList = ({ projects, itemsPerPage = 1 }) => {
   const [open, setOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState({});
-  const resizeResult = () => {
-    let screenSize;
-    return (screenSize = window.innerWidth > 1024 ? 3 : itemsPerPage);
-  };
-
-  const [responsiveItemsPerPage, setResponsiveItemsPerPage] =
-    useState(resizeResult);
-
+  const [screen, setScreen] = useState(1024);
+  const [responsiveItemsPerPage, setResponsiveItemsPerPage] = useState();
   useEffect(() => {
-    const handleResize = () => {
-      setResponsiveItemsPerPage(window.innerWidth > 1024 ? 3 : itemsPerPage);
-      console.log(window.innerWidth);
+    setScreen(window.innerWidth);
+    console.log(screen, "Screen");
+    const resizeResult = () => {
+      let screenSize;
+      return (screenSize = screen > 1024 ? 3 : itemsPerPage);
     };
-    window.addEventListener("resize", handleResize);
-  }, []);
+    setResponsiveItemsPerPage(resizeResult());
+  }, [screen]);
+
   const [currentPage, setCurrentPage] = useState(1);
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
