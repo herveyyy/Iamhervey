@@ -8,18 +8,23 @@ const Modal = ({ isOpen, isClose, data }) => {
         isOpen ? " opacity-100 z-50 visible" : "-z-50 opacity-0  invisible"
       }`}
     >
-      <div className="bg-black w-full h-full rounded-lg p-3">
+      <div className="bg-black w-full h-full rounded-lg p-3 overflow-hidden">
         <div className=" flex justify-end w-full items-center">
-          <div className="flex justify-start w-[90%] border-r border-gray-800">
-            <div className="">{data.title}</div>
+          <div className="flex justify-start w-[90%]  ">
+            <div className="border-r border-gray-800 pr-2">{data.title}</div>
           </div>
           <div className="w-[10%]">
             <div className="flex justify-end">
-              <button onClick={() => isClose()}>
+              <button className="text-gray-800" onClick={() => isClose()}>
                 <FaX className="" />
               </button>
             </div>
           </div>
+        </div>
+        {/* Content */}
+        <div className="w-full h-full overflow-hidden overflow-y-scroll">
+          {/* Picture */}
+          <div className="h-"></div>
         </div>
       </div>
     </div>
