@@ -39,7 +39,7 @@ const ProjectCard = ({
       </div>
       <div className="flex w-full  bg-white rounded-b-3xl justify-between items-end p-1 gap-x-2">
         <div className="w-full px-2 flex items-center h-full ">
-          <div className="text-black font-mono text-[8px] md:text-[10px] flex gap-1 items-baseline">
+          <div className="text-black font-mono text-[6px] md:text-[9px] text-center w-full flex gap-1 items-baseline">
             Status: {linkChecker(deploymentLink)}
             {status}
           </div>
