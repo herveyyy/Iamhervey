@@ -96,9 +96,13 @@ const Usernav = ({ menu, setMenu }) => {
             </div>
           </div>
           <div className="md:hidden border-l border-gray-800 flex items-center justify-center ">
-            <div className="w-12 flex items-center justify-center border-r border-gray-800 h-full">
+            <a
+              href="/files/MAPANO_HERVEYGERALPH_RESUME.pdf"
+              download
+              className="w-12 flex items-center justify-center border-r border-gray-800 h-full"
+            >
               <HiDownload />
-            </div>
+            </a>
             <div
               onClick={openMenu}
               className="w-12 flex items-center justify-center border-gray-800 h-full hover:bg-white hover:text-black duration-500 cursor-pointer"
@@ -106,10 +110,14 @@ const Usernav = ({ menu, setMenu }) => {
               <HiOutlineMenu />
             </div>
           </div>
-          <div className=" text-sm text-center w-40 lg:border-l border-l-0 hidden gap-x-2 px-2  md:flex items-center justify-center cursor-pointer border-gray-800 h-full">
+          <a
+            href="/files/MAPANO_HERVEYGERALPH_RESUME.pdf"
+            download
+            className=" text-sm text-center w-40 lg:border-l border-l-0 hidden gap-x-2 px-2  md:flex items-center justify-center cursor-pointer border-gray-800 h-full"
+          >
             <HiDownload />
             Download CV
-          </div>
+          </a>
         </div>
 
         {/* PHONE SCREEN */}
