@@ -48,7 +48,7 @@ const ProjectList = ({ projects, itemsPerPage = 1 }) => {
   return (
     <div className=" ">
       <Modal
-        isClose={() => setOpen(!open)}
+        isClose={() => setOpen(false)}
         isOpen={open}
         data={selectedProject}
       />
