@@ -28,6 +28,19 @@ const projects = [
         },
     },
     {
+        title: "eNGP (On the Job Training - Project)",
+        status: "Completed",
+        coverImage: "/images/projectImages/engp.png", // Replace with your image path
+        gitLink: "https://github.com/your-username/project3",
+        images: [],
+        role: {
+            frontEnd: true,
+            backEnd: false,
+            fullStack: false,
+        },
+        deploymentLink: "ngpdbsv2.denr10.com.ph",
+    },
+    {
         title: "LesGO App (Commisioned Project)",
         status: "Completed",
         coverImage: "/images/projectImages/LesGo.png", // Replace with your image path
@@ -40,6 +53,7 @@ const projects = [
         },
         // deploymentLink: "https://your-domain.com/project3",
     },
+
     {
         title: "Skillings (Work Project - Tutor Module)",
         status: "On Development",

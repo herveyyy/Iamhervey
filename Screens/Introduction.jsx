@@ -23,8 +23,13 @@ export const Introduction = () => {
                                     </p>
                                 </div>
                                 <div>
-                                    <p className=" md:text-xl desktop:text-3xl  laptop:text-2xl font-thin text-center  translate-x-0  lg:mt-2 md:-translate-y-14">
-                                        I am a Full Stack Developer
+                                    <p className=" md:text-lg desktop:text-2xl  laptop:text-xl font-thin text-center  translate-x-0  lg:mt-2 md:-translate-y-14">
+                                        A full-stack developer from Cagayan de
+                                        Oro City, Philippines. I'm passionate
+                                        about building web applications and
+                                        exploring game development. I enjoy
+                                        blending technical skills with creative
+                                        problem-solving.
                                     </p>
                                 </div>
                             </div>

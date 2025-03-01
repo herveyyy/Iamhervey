@@ -57,7 +57,7 @@ const Modal = ({ isOpen, isClose, data }) => {
                         </div>
                     </div>
                     {/* details */}
-                    <div className=" w-full bg-white/10 pb-12 rounded-xl  p-2">
+                    <div className=" w-full bg-white/10 pb-12 rounded-xl gap-2 flex flex-col  p-2">
                         <div className="w-full flex  justify-center">
                             <p className="font-mono  border-gray-800 bg-white  text-center text-black text-3xl">
                                 Project Information
@@ -72,7 +72,7 @@ const Modal = ({ isOpen, isClose, data }) => {
                                     {data.title}
                                 </p>
                             </div>
-                            <div className=" font-mono border-gray-800 w-full text-xs border-b">
+                            <div className=" font-mono border-gray-800 w-full items-center flex text-xs border-b">
                                 Status: {data.status}
                             </div>
                         </div>
